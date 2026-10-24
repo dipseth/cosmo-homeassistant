@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+# local RE artifacts — not part of the integration
+jadx_out/
+mc/
+dl/
+*.apk
+*.xapk
+ENDPOINTS.txt
+HANDOFF.md
+MEMORY*
+BACKEND.md

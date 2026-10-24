@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "COSMO parent account",
+        "description": "Sign in with your COSMO: Mission Control email and password.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate COSMO",
+        "description": "Enter the current password for {email}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid email or password",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This account is already set up",
+      "reauth_successful": "Re-authentication was successful"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "COSMO options",
+        "data": {
+          "poll_interval": "Location poll interval"
+        }
+      }
+    }
+  },
+  "entity": {
+    "device_tracker": {
+      "location": { "name": "Location" }
+    },
+    "sensor": {
+      "battery": { "name": "Battery" },
+      "external_battery": { "name": "Charger battery" },
+      "last_fix": { "name": "Last fix" },
+      "gps_source": { "name": "GPS source" },
+      "phone_number": { "name": "Phone number" },
+      "firmware": { "name": "Firmware" },
+      "imei": { "name": "IMEI" }
+    },
+    "binary_sensor": {
+      "emergency": { "name": "Emergency" },
+      "powered_off": { "name": "Powered off" }
+    },
+    "button": {
+      "locate": { "name": "Locate now" },
+      "ring": { "name": "Ring watch" }
+    }
+  }
+}
